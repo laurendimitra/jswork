@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Favorite TV Shows</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      // tvShow is a variable that will be used to save the users answer from the prompt. It will refresh at every part of the loop so we made a storage varaible where the answers are pushed to to form an array. 
+      var favTVshows = [];
+      var tvShow;
+
+      // For Loop Elements Repeats 3 Times
+      for (var i = 1; i < 4; i++) {
+
+        //see above
+        tvShow = prompt("What's your #" + i + " favorite TV show?");
+
+        // see above
+        favTVshows.push(tvShow);
+      }
+
+      // After we've asked the user their top three tv shows, we run a loop from the array where their answers were pushed, letting them know the three shows they put. 
+      for (var j = 0; j < favTVshows.length; j++) {
+
+        // yeah
+        alert(favTVshows[j]);
+      }
+
+    </script>
+
+  </body>
+</html>

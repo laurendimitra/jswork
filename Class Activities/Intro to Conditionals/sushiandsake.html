@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sushi and Seke -solved</title>
+</head>
+<body>
+    <!-- ### Instructions
+
+* Create a website (from scratch) that asks users if they eat steak.
+
+* If they respond with "yes", write the following to the page: "Here’s a Steak Sandwich!"
+
+* If they respond with "no", write the following to the page: "Here’s a Tofu Stir-Fry!"
+
+* **BONUS:** Ask what the user’s birth year is. If they are under 21, alert the following: "No Sake for you!"
+
+* **HINT:** You will need to use `document.write()` from a few slides back. -->
+
+<script type="text/javascript">
+
+var steak = confirm("Do you like steak?");
+
+if (steak){
+    document.write("Here's a steak sandwhich!");
+    document.write('<img src="https://www.recipetineats.com/wp-content/uploads/2017/01/Steak-Sandwich-7-copy.jpg">');
+}
+
+else {
+    document.write("Here’s a Tofu Stir-Fry!")
+    document.write('<img src="https://4.bp.blogspot.com/-QSaOKGBfq6g/V7aPDYnG8SI/AAAAAAAAA1w/vQ1r08BVoHE-c-RbspmyYVryhxfpc5BKQCLcB/s1600/Crispy-Teriyaki-Tofu-Stir-Fry-002.jpg">');
+}
+
+var birthyear = prompt("What is your birthyear?");
+
+if (birthyear <= 1997) {
+    alert("Whoo! Have some Sake with that food.")
+}
+
+else {
+    alert("No sake for you!")
+}
+</script>
+
+
+</body>
+</html>
